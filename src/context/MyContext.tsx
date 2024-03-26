@@ -16,7 +16,6 @@ type MyContextData = {
 const MyContext = React.createContext<MyContextData>({
   step: 0,
   
-
   setStep: () => {},
 });
 

@@ -25,15 +25,15 @@ function App() {
   return (
     <>
       <h1>Quiz 02</h1>
-      <MyProvider>
+     
        <Stepper/>
        <Content/> 
       
       <div className='flex'>
-        <button type="button"onClick={() => setStep(step)}>Prev</button>
-        <button type="button" onClick={() => setStep(step)}>Next</button>
+        <button type="button"onClick={() => setStep(step - 1)}>Prev</button>
+        <button type="button" onClick={() => setStep(step + 1)}>Next</button>
       </div>
-      </MyProvider>
+     
     </>
   )
 }
